@@ -1,0 +1,15 @@
+schema {
+    query:Query
+}
+
+type Query {
+    getAllItems: [Item]!
+}
+
+type Item {
+    id: ID!
+    description: String
+    name: String
+    rate: String
+}
+

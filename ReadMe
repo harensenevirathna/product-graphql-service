@@ -1,0 +1,21 @@
+1. use this endpoint to invoke the item information
+
+endpoint: POST http://localhost:8086/item/api/graphql
+Query 1:
+{
+	getAllItems{
+		description
+		name
+	}
+}
+
+You can get the different result by changing GraphQL query like below:
+
+Query 2:
+{
+	getAllItems{
+		description
+		name
+		rate
+	}
+}
